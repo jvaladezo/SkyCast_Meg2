@@ -18,7 +18,7 @@ jobs:
         runs-on: ubuntu-latest
     
         steps:
-            # 1. Descargar el código
+            # 0. Descargar el código
             - name: Descargar código
               uses: actions/checkout@v4
 
@@ -59,10 +59,12 @@ jobs:
                 name: publish
                 path: publish
 
-            # Despliegue
+               # Despliegue
             - name: Deploy to Pages
               uses: peaceiris/actions-gh-pages@v4
               with:
                 github_token: ${{ secrets.GITHUB_TOKEN }}
                 publish_dir: publish/wwwroot
                 force_orphan: true
+
+            
