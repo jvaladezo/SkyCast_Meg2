@@ -5,8 +5,8 @@ on:
         branches: ["master"]
     
 env: 
-    DOTNET_VERSION: '8.0.x'
-    NODE_VERSION: '22.x'
+    DOTNET_VERSION: '8.0.16'
+    NODE_VERSION: '22.15.0'
 
 permissions:
   contents: write
